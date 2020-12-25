@@ -1,8 +1,12 @@
 
 //assets/js/app.js
 import 'bootstrap';
+
 //fichier scss contenant nos css
-//import './css/app.scss';
+import './css/app.scss';
+
+// Need jQuery? Install it with "yarn add jquery", then uncomment to import it.
+import $ from 'jquery';
 
 import './styles/Progressus/css/bootstrap.min.css';
 import './styles/Progressus/css/font-awesome.min.css';
