@@ -2,11 +2,18 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <title>{% block title %}StandAuto{% endblock %}</title>
+		{# appel du fichier css situé dans public/build #}
+		 {% block stylesheets %}
+		       {{ encore_entry_link_tags('app') }}
+		 {% endblock %}
+
     </head>
     <body>
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+		{# appel du fichier js situé dans public/build #}
+		{% block javascripts %}
+		        {{ encore_entry_script_tags('app') }}
+		{% endblock %}
     </body>
 </html>
